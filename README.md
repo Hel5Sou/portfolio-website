@@ -1,14 +1,14 @@
 # React Portfolio-Website
 
 Single Page Portfolio project 
-Components: Carousel, Navbar, NavItem, Social, Widecard
-Contents: About, Contact, Education, Home, Skills, Todo app
+### Components: Carousel, Navbar, NavItem, Social, Widecard
+### Contents: About, Contact, Education, Home, Skills, Todo app
 
 For public - you can download this project and just change the text components and images to build your own portfolio website
 
 # React ToDo list built with React Hooks
 
-I have create a to-do application. This application will display the tasks, add new tasks, mark tasks as complete, and remove tasks. Also will change color of the row for tasks in progreww. These actions will touch upon the four aspects of a CRUD (Create, Read, Update, and Delete) application.
+I have create a to-do application. This application will display the tasks, add new tasks, mark tasks as complete, and remove tasks. Also will change color of the row for tasks in progress. These actions will touch upon the four aspects of a CRUD (Create, Read, Update, and Delete) application.
 
 This application is integrating React Hooks. React Hooks allow for functional components to have a state and use lifecycle methods, allowing you to avoid using Class components and have more modular and readable code.
 
