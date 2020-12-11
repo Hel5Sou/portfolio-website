@@ -1,38 +1,226 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+:root{
+  --sidebar-flex:1.5;
+  --condiv-flex:6;
+  --fontsize-p:1.2rem;
+  --fontsize-nav:1.6rem;
+  --typing-font:3rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*
+{
+  margin:0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: 'Raleway';
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App
+{
   display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(211, 236, 236, 0.986);
+}
+nav
+{
+  padding:60px 30px 0px 30px ;
+  flex:var(--sidebar-flex);
+  background: rgb(58, 7, 177);
+  background: linear-gradient(180deg, rgb(27, 6, 85) 50%, rgba(132,124,252,1) 80%);
+}
+.condiv
+{
+  padding: 100px ;
+  background-color: #f4f5f9;
+  flex:var(--condiv-flex);
+}
+
+.home
+{
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  
+}
+
+.todo-list {
+  margin-top: 50px;
+  background: rgb(58, 7, 177);
+  border-radius: 4px;
+  max-width: 500px;
+  padding: 5px;
+  align-items: center;
+}
+
+button {
+margin-right: 5px;
+border-radius: 2px;
+width: 100px;
+height: 30px;
+}
+
+input {
+width: 315px;
+height: 25px;
+font-size: 20px;
+}
+
+.todo {
+  background-color: #787d83;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  margin-bottom: 6px;
+  padding: 3px 10px;
+}
+
+.in-todo {
+  background: rgba(255, 255, 255, 0.824);
+}
+
+.in-progress {
+  background: rgba(132,124,252,1);
+  font-weight: bold;
+}
+.profilepic
+{
+  border-radius: 50%;
+  width: 400px;
+  margin: 30px;
+}
+.typingeffect
+{
+  font-size: var(--typing-font);
+  margin-bottom: 30px;
+}
+
+nav ul{
+  font-size:var(--fontsize-nav) ;
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+  color: white !important;
+}
+nav ul li
+{
+  margin:40px;
+}
+
+a
+{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a.email {
+  color: blue;
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtopic
+{
+  margin:10px 10px 30px 10px !important;
 }
+p{
+  font-size: var(--fontsize-p);
+}
+h1,h2,h3,h4,p{
+  margin: 10px;
+}
+.social
+{
+  position: fixed;
+  margin-top: 20px;
+  display: flex;
+  bottom: 60px;
+}
+.social i
+{
+  padding-right: 30px;
+  font-size: 25px;
+  color: #787d83;
+}
+.social i:hover
+{
+  color: #ffffff;
+}
+.widecard
+{
+  border:0px solid #9a9b9c;
+  display: flex;
+  margin:30px 0px 30px 0px;
+}
+.widecard:hover
+{
+  color: #1b1d20;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.active
+{
+  font-weight: bolder;
+}
+.skills li
+{
+  list-style-type:square;
+  margin:30px;
+}
+
+.skills ul
+{
+  margin-bottom: 70px;
+}
+
+@media all and (max-width: 450px) {
+  :root {
+    --fontsize-nav:1rem;
+    --sidebar-flex:0;
+    --typing-font:2rem;
+  }
+  .App
+  {
+    flex-direction: column;
+  }
+  .sidebar
+  {
+    padding: 30px;
+    background: rgba(8, 10, 109);
+    background: linear-gradient(90deg, rgba(8, 10, 109) 50%, rgb(65, 190, 221) 80%);
+  }
+  .condiv
+  {
+    padding: 50px ;
+  }
+  nav ul
+  {
+    display: flex;
+  }
+  nav ul li
+  {
+    margin: 10px;
+  }
+  .social
+  {
+    left:0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    bottom: 30px;
+  }
+  .social i
+  {
+    padding-right: 0px;
+  }
+  
+}
+
+.carousel-wrapper {
+  max-width: 600px;
+  padding: 0 20px;
+
+}
+
